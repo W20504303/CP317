@@ -1,0 +1,31 @@
+import turtle
+
+turtle.speed(4)
+turtle.bgcolor('#9966cc')
+turtle.pensize(3)
+
+def curve():
+  for i in range(200):
+    turtle.right(1)
+    turtle.forward(1)
+
+    turtle.color('#ffe4e1')
+    turtle.begin_fill()
+    turtle.left(140)
+    turtle.forward(111.65)
+curve()
+
+turtle.left(120)
+curve()
+turtle.forward(111.65)
+turtle.end_fill()
+
+def txt():
+  turtle.up()
+  turtle.setpos(-70, 90)
+  turtle.color('red')
+  turtle.write('Have a nice day!', font=("Comic Sans MS", 16))
+txt()
+
+turtle.hideturtle()
+turtle.done()
